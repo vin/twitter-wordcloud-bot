@@ -29,7 +29,7 @@ class TwitterWordCloudBot:
         self.BOT_NAME = settings.read_bot_name()
 
         # hashtags to which this bot respond
-        self.WORDCLOUD_HASHTAGS = settings.read_wordcloud_hashtags()
+        self.WORDCLOUD_HASHTAGS = set(settings.read_wordcloud_hashtags())
 
         # max number of words displayed in the image
         self.MAX_WORDS = settings.read_max_words()
